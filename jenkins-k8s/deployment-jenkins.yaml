@@ -20,7 +20,7 @@ spec:
   template:
     metadata:
       annotations:
-      creationTimestamp: null
+      #creationTimestamp: null
       labels:
         app: my-jenkins
         release: my-jenkins
