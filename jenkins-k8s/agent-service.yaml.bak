@@ -12,6 +12,6 @@ spec:
     protocol: TCP
     targetPort: 50000
   selector:
-    component: my-jenkins-jenkins-master
+    app: my-jenkins
   sessionAffinity: None
   type: ClusterIP
