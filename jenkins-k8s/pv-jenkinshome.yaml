@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: jenkinshome
+spec:
+  capacity:
+    storage: 20480Mi
+  accessModes:
+    - ReadWriteOnce
+  nfs:
+    server: nfs.freidenker.tech
+    path: "/home/nfsvolume/winter"
+  claimRef:
+    name: jenkinshome
+    namespace: default
