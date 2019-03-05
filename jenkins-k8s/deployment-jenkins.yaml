@@ -42,7 +42,7 @@ spec:
             secretKeyRef:
               key: jenkins-admin-user
               name: my-jenkins
-        image: jenkins/jenkins:lts
+        image: jenkins/jenkins:2.155
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 12
